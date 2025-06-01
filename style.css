@@ -11,7 +11,8 @@ body {
 
 /* Header section styling */
 header {
-  background-color: #0068b5; /* Intel blue */
+  /* Add a blue to dark blue gradient background */
+  background: linear-gradient(135deg, #0068b5 0%, #003366 100%); /* Blue to dark blue */
   color: #fff; /* White text */
   padding: 32px 0 24px 0; /* Top and bottom padding */
   text-align: center; /* Center all header content */
@@ -23,14 +24,14 @@ header {
 }
 
 .header-container h1 {
-  margin: 12px 0 8px 0;
-  font-size: 2em;
+  margin: 12px 0 24px 0; /* Increased bottom margin for more space below h1 */
+  font-size: 3em;
 }
 
 .header-container p {
   margin: 0 auto;
   max-width: 500px;
-  font-size: 1.1em;
+  font-size: 1.5em;
 }
 
 /* Timeline section styling */
