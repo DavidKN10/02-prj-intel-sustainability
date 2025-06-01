@@ -1,1 +1,108 @@
-/* Add your CSS here */
+/* style.css - Simple Intel Timeline Styles for Beginners */
+
+/* Set a clean, readable font for the whole page */
+body {
+  font-family: Arial, Helvetica, sans-serif; /* Use common web-safe fonts */
+  background-color: #f5faff; /* Light blue background */
+  color: #222; /* Dark text for readability */
+  margin: 0;
+  padding: 0;
+}
+
+/* Header section styling */
+header {
+  background-color: #0068b5; /* Intel blue */
+  color: #fff; /* White text */
+  padding: 32px 0 24px 0; /* Top and bottom padding */
+  text-align: center; /* Center all header content */
+}
+
+header img {
+  width: 120px; /* Set logo size */
+  margin-bottom: 12px;
+}
+
+header h1 {
+  margin: 12px 0 8px 0;
+  font-size: 2em;
+}
+
+header p {
+  margin: 0 auto;
+  max-width: 500px;
+  font-size: 1.1em;
+}
+
+/* Timeline section styling */
+section {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap on small screens */
+  justify-content: center; /* Center cards horizontally */
+  gap: 20px; /* Space between cards */
+  padding: 32px 10px 10px 10px;
+}
+
+/* Timeline card styling */
+section > div {
+  background: #fff; /* White card background */
+  border: 2px solid #0068b5; /* Blue border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07); /* Soft shadow */
+  width: 260px;
+  padding: 18px 14px 16px 14px;
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effect */
+}
+
+/* Card hover effect */
+section > div:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 6px 18px rgba(0,104,181,0.15);
+  border-color: #005091; /* Slightly darker blue on hover */
+}
+
+/* Card headings */
+section h2 {
+  color: #0068b5;
+  margin: 0 0 4px 0;
+  font-size: 1.2em;
+}
+
+section h3 {
+  margin: 0 0 10px 0;
+  font-size: 1em;
+  color: #222;
+}
+
+/* Card images */
+section img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* Card text */
+section p {
+  font-size: 0.98em;
+  margin: 0;
+}
+
+/* Timeline instruction text */
+body > p {
+  text-align: center;
+  color: #0068b5;
+  font-weight: bold;
+  margin: 24px 0 16px 0;
+}
+
+/* Responsive: Stack cards on small screens */
+@media (max-width: 700px) {
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+  section > div {
+    width: 95%;
+    max-width: 340px;
+  }
+}
