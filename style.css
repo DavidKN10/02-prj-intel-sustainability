@@ -17,17 +17,17 @@ header {
   text-align: center; /* Center all header content */
 }
 
-header img {
+.header-container img {
   width: 120px; /* Set logo size */
   margin-bottom: 12px;
 }
 
-header h1 {
+.header-container h1 {
   margin: 12px 0 8px 0;
   font-size: 2em;
 }
 
-header p {
+.header-container p {
   margin: 0 auto;
   max-width: 500px;
   font-size: 1.1em;
@@ -43,7 +43,7 @@ section {
 }
 
 /* Timeline card styling */
-section > div {
+.timeline-card {
   background: #fff; /* White card background */
   border: 2px solid #0068b5; /* Blue border */
   border-radius: 10px; /* Rounded corners */
@@ -54,27 +54,27 @@ section > div {
 }
 
 /* Card hover effect */
-section > div:hover {
+.timeline-card:hover {
   transform: translateY(-6px) scale(1.03);
   box-shadow: 0 6px 18px rgba(0,104,181,0.15);
   border-color: #005091; /* Slightly darker blue on hover */
 }
 
 /* Card headings */
-section h2 {
+.timeline-card h2 {
   color: #0068b5;
   margin: 0 0 4px 0;
   font-size: 1.2em;
 }
 
-section h3 {
+.timeline-card h3 {
   margin: 0 0 10px 0;
   font-size: 1em;
   color: #222;
 }
 
 /* Card images */
-section img {
+.timeline-card img {
   width: 100%;
   height: auto;
   border-radius: 6px;
@@ -82,7 +82,7 @@ section img {
 }
 
 /* Card text */
-section p {
+.timeline-card p {
   font-size: 0.98em;
   margin: 0;
 }
@@ -101,7 +101,7 @@ body > p {
     flex-direction: column;
     align-items: center;
   }
-  section > div {
+  .timeline-card {
     width: 95%;
     max-width: 340px;
   }
